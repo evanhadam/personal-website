@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function useRefState<T>(
   initialState: T,
-): [React.MutableRefObject<T>, React.Dispatch<React.SetStateAction<T>>] {
+): [React.RefObject<T>, React.Dispatch<React.SetStateAction<T>>] {
   const [internalState, setInternalState] = React.useState<T>(initialState);
 
   const state = React.useRef<T>(internalState);
@@ -10,11 +10,11 @@ export default function useRefState<T>(
   const setState = (newState: React.SetStateAction<T>) => {
     if (newState instanceof Function) {
       state.current = newState(state.current);
-      setInternalState(newState);
     } else {
       state.current = newState;
-      setInternalState(newState);
     }
+
+    setInternalState(state.current);
   };
 
   return [state, setState];

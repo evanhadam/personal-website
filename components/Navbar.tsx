@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
 import styles from '../styles/Navbar.module.css';
-import { useRouter } from 'next/router';
 import useRefState from '../lib/useRefState';
 import { MenuOption } from '../lib/Types';
 
@@ -11,7 +10,6 @@ interface NavbarProps {
 }
 
 export default function Navbar(props: NavbarProps) {
-  const router = useRouter();
 
   const [hidden, setHidden] = React.useState<boolean>(false);
   const [lastScrollY, setLastScrollY] = useRefState<number>(0);
@@ -42,7 +40,7 @@ export default function Navbar(props: NavbarProps) {
         <ul className={styles.navbar}>
           <li className={`${styles.navbarItem} float-left`}>
             <Link href="/" passHref>
-              <div className={styles.navbarBrand}>jwstanly.com</div>
+              <div className={styles.navbarBrand}>evanhadam.com</div>
             </Link>
           </li>
 
