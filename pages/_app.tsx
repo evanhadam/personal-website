@@ -1,4 +1,5 @@
 import React from "react";
+import '../styles/globals.css';
 import { AppProps } from "next/app";
 import Image from "next/image";
 import HomeLayout from '../components/HomeLayout';
