@@ -38,7 +38,10 @@ export default function Navbar(props: NavbarProps) {
     >
       <div style={{ backgroundColor: props.color }}>
         <ul className={styles.navbar}>
-          <li className={`${styles.navbarItem} float-left`}>
+          <li 
+            style={{ float: 'left' }}
+            className={styles.navbarItem}
+          >
             <Link href="/" passHref>
               <div className={styles.navbarBrand}>evanhadam.com</div>
             </Link>
@@ -47,7 +50,8 @@ export default function Navbar(props: NavbarProps) {
           {props.options.map(option => {
             return (
               <li
-                className={`${styles.navbarItem} float-right`}
+                style={{ float: 'right' }}
+                className={styles.navbarItem}
                 key={option.href}
               >
                 <Link href={option.href} passHref>
