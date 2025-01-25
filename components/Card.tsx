@@ -1,6 +1,6 @@
 import React from 'react';
 import Spacer from './Spacer'
-import { H1, H2, H3, H4, H5, H6 } from './Titles'
+import { H1, H2, H3, H4, H5, H6, Tag, Code, Text } from './Titles'
 
 interface CardProps {
     header: string;
@@ -38,16 +38,16 @@ export default function Card(props: CardProps){
 
             <Spacer bottom={5} />
                 {Array.isArray(props.content) ? (
-                    props.content.map(content = > {
+                    props.content.map(content => {
                         return (
                             <Text key={content} marginBottom={15}>
-                            {content}
+                              {content}
                             </Text>
                         );
                     })
-                )
-                }
+                ) : (
+                    <Text marginBottom={15}>{props.content}</Text>
+                )}
         </div>
-    )
-
+    );
 }

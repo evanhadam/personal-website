@@ -136,5 +136,12 @@ export function Code(props: TitleProps)
 
 export function Tag(props: TitleProps)
 {
-    
+    return ( 
+        <div
+            style={{ fontSize: 11 }}
+            className="rounded-lg border-solid border border-gray-500 text-gray-500 float-left font-semibold mt-0 ml-0 mb-4 mr-5 py-1.5 px-3"
+        >
+            {props.children}
+        </div>
+    )
 }
