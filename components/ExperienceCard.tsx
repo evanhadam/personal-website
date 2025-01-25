@@ -1,10 +1,14 @@
 import React from 'react';
 
-interface ExperienceCard {
+interface ExperienceCardProps {
     header: string;
     subheader: string;
     codeTags?: string[];
-    description: string[];
+    content: string | string[];
     imageLink: string;
     imageAlt: string;
+}
+
+export default function ExperienceCard(props: ExperienceCardProps){
+
 }
