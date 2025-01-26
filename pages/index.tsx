@@ -1,9 +1,14 @@
 import React from 'react';
-import Card from 
+import ExperienceCard from '../components/ExperienceCard';
+import CenteredContainer from '../components/CenteredContainer';
+import SiteHead from '@/components/SiteHead';
 
 export default function Home() {
   return (
-    <div>
-    </div>
+    <>
+      <SiteHead 
+        title="Evan Hadam"
+        description="Hi! I'm Evan Hadam, a pre-med turned engineer from Tampa, FL. Come see where my journey has taken me." />
+    </>
   );
 }
