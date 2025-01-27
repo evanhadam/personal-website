@@ -19,7 +19,7 @@ export default function Home() {
             Hey! I'm Evan Hadam, a CS + Econ student at the University of Florida.
           </p>
           <p>
-            I spent college not planning on going into tech. I wanted to make a difference through direct patient care 
+            I spent much of college not planning on going into tech. I wanted to make a difference through direct patient care 
             as a doctor before working as a programmer in medical research labs around campus shifted my interests.
           </p>
           <p>
