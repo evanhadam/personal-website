@@ -21,7 +21,6 @@ export default function HomeHeader() {
                         alt="This is Evan Hadam, the guy who made this website"
                         priority
                         className="rounded-full"
-                        
                     />
                 </div>
             </div>
