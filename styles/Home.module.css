@@ -3,5 +3,11 @@
 }
 
 .contentText {
-    
+    text-align: center;
+    letter-spacing: -0.02rem;
+    color: #313030;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    margin: 20px 1px;
+    font-weight: 370;
 }
