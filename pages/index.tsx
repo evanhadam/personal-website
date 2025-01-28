@@ -5,6 +5,7 @@ import ExperienceCard from '../components/ExperienceCard';
 import CenteredContainer from '../components/CenteredContainer';
 import SiteHead from '@/components/SiteHead';
 import Spacer from '@/components/Spacer';
+import { H1 } from '@/components/Titles';
 
 export default function Home() {
   return (
@@ -39,9 +40,30 @@ export default function Home() {
           </p>
         </CenteredContainer>
       </div>
-      <div id="experience"></div>
-      <div id="education"></div>
+      <Spacer bottom={40} />
+      <div id="experience">
+        <CenteredContainer>
+          <H1>Experience</H1>
+          <ExperienceCard
+          header='Technical Project Management Intern'
+          subheader='ModMed'
+          codeTags={['Python', 'SQL', 'PowerBI', 'Tableau', 'Jira']}
+          content={['Built practice-specific electronic health records.', 'Scoped internal AI projects, conducted exploratory data analytics for support ticket request management, and interviewed engineers and product managers to refine Agile processes']}
+          imageLink='/images/ModMed.png'
+          imageAlt='Logo for the company Modernizing Medicine'
+          />
+          <ExperienceCard
+          header='Software Engineering Intern'
+          subheader='QuidelOrtho'
+          codeTags={['C++', 'Linux','Python', 'AWS Lambda', 'AWS S3']}
+          content={['Worked on code for blood analyzing devices.', 'Created rule-based analysis detection systems to clear years of technical debt, moved bug logging processes offline, and manually conducted static analysis on hundreds of thousands of lines of code.']}
+          imageLink='/images/QuidelOrtho.png'
+          imageAlt='Logo for the company QuidelOrtho'
+          />
+        </CenteredContainer>
+      </div>
       <div id="projects"></div>
+      <div id="education"></div>
     </>
   );
 }
