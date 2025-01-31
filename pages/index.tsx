@@ -48,7 +48,7 @@ export default function Home() {
           header='Project Management Intern'
           subheader='ModMed'
           codeTags={['Python', 'SQL', 'PowerBI', 'Tableau', 'Jira']}
-          content={['Built practice-specific electronic health records.', 'Scoped internal AI projects, conducted exploratory data analytics for support ticket request management, and interviewed engineers and product managers to refine Agile processes']}
+          content={['Built specialty-specific electronic health records.', 'Scoped internal AI projects, conducted exploratory data analytics for support ticket request management, and interviewed engineers and product managers to refine Agile processes']}
           imageLink='/images/ModMed.png'
           imageAlt='Logo for the company Modernizing Medicine'
           />
@@ -56,7 +56,7 @@ export default function Home() {
           header='Software Engineering Intern'
           subheader='QuidelOrtho'
           codeTags={['C++', 'Linux','Python', 'AWS Lambda', 'AWS S3']}
-          content={['Worked on code for blood analyzing devices.', 'Created rule-based analysis detection systems to clear years of technical debt, moved bug logging processes offline, and manually conducted static analysis on hundreds of thousands of lines of code.']}
+          content={['Worked on code for blood analyzers for one of the largest diagnostics companies in America.', 'Created rule-based analysis detection systems to clear years of technical debt, moved bug logging processes offline, and revised hundreds of files of code that got pushed to production with static analysis.']}
           imageLink='/images/QuidelOrtho.png'
           imageAlt='Logo for the company QuidelOrtho'
           />
@@ -69,9 +69,9 @@ export default function Home() {
           <ExperienceCard
             header='University of Florida'
             subheader='Bachelor of Science in Computer Science and Economics'
-            content={['Built practice-specific electronic health records.', 'Scoped internal AI projects, conducted exploratory data analytics for support ticket request management, and interviewed engineers and product managers to refine Agile processes']}
+            content={["University of Florida, the center of Gainesville, "]}
             imageLink='/images/UF.jpg'
-            imageAlt='Logo for the company Modernizing Medicine'
+            imageAlt='Logo for the University of Florida'
           />
         </CenteredContainer>
       </div>
