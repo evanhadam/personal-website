@@ -1,6 +1,6 @@
 import React from 'react';
 import Spacer from './Spacer'
-import { H1, H2, H3, H4, H5, H6, Tag, Code, Text } from './Titles'
+import { H2, H4, Tag, Code, Text } from './Titles'
 
 interface CardProps {
     header: string;

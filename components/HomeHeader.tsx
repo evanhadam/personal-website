@@ -17,6 +17,7 @@ export default function HomeHeader() {
                 <div className={styles.imageContainer}>
                     <Image 
                         src="/headshot-cropped.png"
+                        sizes='20vw, 20vw'
                         layout="fill"
                         alt="This is Evan Hadam, the guy who made this website"
                         priority

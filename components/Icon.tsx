@@ -8,12 +8,12 @@ interface iconProps {
 
 export default function Icon(props: iconProps) {
     return (
-        <div className="rounded-3x1 w-36 h-36 max-w-xl m-0 mt-2 object-cover">
+        <div className="flex rounded-3x1 w-36 h-36 max-w-xl m-0 mt-2 object-cover">
             <Image 
-                className="rounded-3x1" 
+                className="rounded-xl overflow-hidden shadow-2xl" 
                 src={props.imageUrl} 
                 alt={props.alt}
-                width='300'
+                width='144'
                 height='144'
             />
         </div>

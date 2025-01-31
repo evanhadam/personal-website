@@ -2,6 +2,7 @@ import React from 'react';
 import Card from './Card';
 import CenteredContainer from './CenteredContainer';
 import Icon from './Icon';
+import styles from '../styles/Card.module.css';
 
 interface ExperienceCardProps {
     header: string;
@@ -15,14 +16,12 @@ interface ExperienceCardProps {
 export default function ExperienceCard(props: ExperienceCardProps){
     return (
         <CenteredContainer>
-        <div>
-            <div className="flex flex-col md:flex-row mb-8 w-full">
-                <div className="flex-none">
-                    <Icon
-                    imageUrl={props.imageLink}
-                    alt={props.imageAlt}
-                    />
-                </div>
+        <div className="flex flex md:flex-row mb-8 w-full">
+            <div className="flex-none">
+                <Icon
+                imageUrl={props.imageLink}
+                alt={props.imageAlt}
+                />
             </div>
             <div className="flex-auto mt-5 mb-10 md:ml-10 md:mt-0">
                 <Card

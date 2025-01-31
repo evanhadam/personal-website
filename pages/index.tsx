@@ -42,10 +42,11 @@ export default function Home() {
       </div>
       <Spacer bottom={40} />
       <div id="experience">
+      <div style={{ padding: '3vw' }} />
         <CenteredContainer>
-          <H1>Experience</H1>
+          <H1 centered>Experience</H1>
           <ExperienceCard
-          header='Technical Project Management Intern'
+          header='Project Management Intern'
           subheader='ModMed'
           codeTags={['Python', 'SQL', 'PowerBI', 'Tableau', 'Jira']}
           content={['Built practice-specific electronic health records.', 'Scoped internal AI projects, conducted exploratory data analytics for support ticket request management, and interviewed engineers and product managers to refine Agile processes']}
