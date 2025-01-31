@@ -27,6 +27,7 @@ export default function SiteHead(props: SiteHeadProps) {
         <Head>
             <title>{props.title}</title>
             <link rel="icon" type="image/x-icon" href='./favicon.ico' />
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" />
 
             <meta name="name" content={props.title} />
             <meta name="description" content={description.substring(0, 160)} />

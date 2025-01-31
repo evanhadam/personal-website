@@ -1,4 +1,5 @@
 import React from 'react';
+import style from '../styles/Card.module.css';
 
 interface TitleProps {
     centered?: boolean;
@@ -58,10 +59,11 @@ export function H1(props: TitleProps) {
 }
 
 export function H2(props: TitleProps) {
+    console.log(style.contentText);
     return (
         <h2
             id={props.id}
-            className={props.centered ? 'text-center' : ''}
+            className={props.centered ? `text-center` : ''}
             style={getCSS(props)}
         >
             {props.children}

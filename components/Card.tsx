@@ -40,7 +40,7 @@ export default function Card(props: CardProps){
                 {Array.isArray(props.content) ? (
                     props.content.map(content => {
                         return (
-                            <Text key={content} marginBottom={15}>
+                            <Text centered key={content} marginBottom={15}>
                               {content}
                             </Text>
                         );

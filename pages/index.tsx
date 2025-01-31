@@ -40,11 +40,10 @@ export default function Home() {
           </p>
         </CenteredContainer>
       </div>
-      <Spacer bottom={40} />
       <div id="experience">
       <div style={{ padding: '3vw' }} />
         <CenteredContainer>
-          <H1 centered>Experience</H1>
+          <H1 centered marginBottom={20}>Experience</H1>
           <ExperienceCard
           header='Project Management Intern'
           subheader='ModMed'
@@ -64,7 +63,18 @@ export default function Home() {
         </CenteredContainer>
       </div>
       <div id="projects"></div>
-      <div id="education"></div>
+      <div id="education">
+        <CenteredContainer>
+          <H1 centered marginBottom={20}>Education</H1>
+          <ExperienceCard
+            header='University of Florida'
+            subheader='Bachelor of Science in Computer Science and Economics'
+            content={['Built practice-specific electronic health records.', 'Scoped internal AI projects, conducted exploratory data analytics for support ticket request management, and interviewed engineers and product managers to refine Agile processes']}
+            imageLink='/images/UF.jpg'
+            imageAlt='Logo for the company Modernizing Medicine'
+          />
+        </CenteredContainer>
+      </div>
     </>
   );
 }

@@ -2,7 +2,6 @@ import React from 'react';
 import Card from './Card';
 import CenteredContainer from './CenteredContainer';
 import Icon from './Icon';
-import styles from '../styles/Card.module.css';
 
 interface ExperienceCardProps {
     header: string;
