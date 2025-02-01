@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link'
 import styles from '../styles/Home.module.css';
 import HomeHeader from '../components/HomeHeader';
 import ExperienceCard from '../components/ExperienceCard';
@@ -12,7 +13,7 @@ export default function Home() {
     <>
       <SiteHead 
         title="Evan Hadam"
-        description="Hi! I'm Evan Hadam, a pre-med turned engineer from Tampa, FL. Come see where my journey has taken me." />
+        description="Hi! I'm Evan Hadam, a pre-med turned engineer from Tampa, FL. Check out my journey!" />
 
       <HomeHeader />
 
@@ -24,19 +25,22 @@ export default function Home() {
             Hey! I'm Evan Hadam, a CS + Econ student at the University of Florida.
           </p>
           <p className={styles.contentText}>
-            I spent much of college not planning on going into tech. I wanted to make a difference through direct patient care 
-            as a doctor before working as a programmer in medical research labs around campus shifted my interests.
+            I spent much of college working towards becoming a doctor. It wasn't until working as a programmer in <Link className={styles.link} href="https://lemaslab.github.io/about/" target="_blank" rel="noopener noreferrer">medical research labs </Link> 
+             that the creativity and broad impact required for technology won me over.
           </p>
           <p className={styles.contentText}>
-            This change led me to working internships at a medical device company and an electronic health record company
+            This shift led me to working internships at a <Link className={styles.link} href="https://www.quidelortho.com/" target="_blank" rel="noopener noreferrer">medical device company</Link> and an <Link className={styles.link} href="https://www.modmed.com/" target="_blank" rel="noopener noreferrer">electronic health record company </Link>
             to hone my tech skills in a familiar environment. 
           </p>
           <p className={styles.contentText}>
-            Now, I'm building software projects used by healthcare professionals across Florida and serving as a leader for a 
-            student-run MedTech engineering team at UF. 
+            Now, I'm building software used by healthcare professionals across Florida and leading a <Link className={styles.link} href="https://www.dreamteameng.org/" target="_blank" rel="noopener noreferrer">
+            student-run MedTech engineering team</Link> at UF. 
           </p>
           <p className={styles.contentText}>
-            These past few years have been really exciting and I'm excited to find new ways to solve people's problems.
+            The medium may have changed but the lessons - empathy, communication, and attention to detail - aren't going anywhere.
+          </p>
+          <p className={styles.contentText}>
+            These past few years have been an amazing journey with even better people, and I'm just getting started!
           </p>
         </CenteredContainer>
       </div>
@@ -44,6 +48,14 @@ export default function Home() {
       <div style={{ padding: '3vw' }} />
         <CenteredContainer>
           <H1 centered marginBottom={20}>Experience</H1>
+          <ExperienceCard
+          header='Incoming Data & AI Tech Consulting Intern'
+          subheader='Ernst & Young'
+          codeTags={['Python', 'SQL', 'AWS', 'Snowflake REST API', 'Databricks']}
+          content={['Summer 2025 - Enterprise Data Engineering - Denver']}
+          imageLink='/images/EY.png'
+          imageAlt='Logo for the company Ernst & Young'
+          />
           <ExperienceCard
           header='Project Management Intern'
           subheader='ModMed'
@@ -56,7 +68,7 @@ export default function Home() {
           header='Software Engineering Intern'
           subheader='QuidelOrtho'
           codeTags={['C++', 'Linux','Python', 'AWS Lambda', 'AWS S3']}
-          content={['Worked on code for blood analyzers for one of the largest diagnostics companies in America.', 'Created rule-based analysis detection systems to clear years of technical debt, moved bug logging processes offline, and revised hundreds of files of code that got pushed to production with static analysis.']}
+          content={['Worked on code for the blood analyzers of one of the largest diagnostics companies globally.', 'Created rule-based analysis detection systems to clear years of technical debt, moved bug logging processes offline, and revised hundreds of files of code that got pushed to production with static analysis.']}
           imageLink='/images/QuidelOrtho.png'
           imageAlt='Logo for the company QuidelOrtho'
           />
@@ -68,8 +80,8 @@ export default function Home() {
           <H1 centered marginBottom={20}>Education</H1>
           <ExperienceCard
             header='University of Florida'
-            subheader='Bachelor of Science in Computer Science and Economics'
-            content={["University of Florida, the center of Gainesville, "]}
+            subheader='Computer Science and Economics'
+            content={["During my time in Gainesville, I've gotten to serve as Finance Director, Hackathon Lead, and Product Manager for Dream Team Engineering, a student-led MedTech design team.", "When not studying or building, catch me running, reading, volunteering for Special Olympics, or playing pickleball!"]}
             imageLink='/images/UF.jpg'
             imageAlt='Logo for the University of Florida'
           />

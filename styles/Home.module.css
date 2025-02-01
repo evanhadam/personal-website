@@ -9,5 +9,11 @@
     line-height: 1.5;
     font-size: 1.2rem;
     margin: 20px 1px;
-    font-weight: 370;
+    font-weight: 450;
+}
+
+.link {
+    color: #739bf0;
+    text-decoration: underline;
+    font-weight: 360;
 }
