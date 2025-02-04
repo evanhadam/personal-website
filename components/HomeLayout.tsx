@@ -7,6 +7,7 @@ import { faLinkedin, faGithub, faStrava, faInstagram } from "@fortawesome/free-b
 import { faCalendar } from "@fortawesome/free-regular-svg-icons";
 import type { IconDefinition } from '@fortawesome/fontawesome-common-types';
 import { MenuOption } from '../lib/Types';
+import Footer from './Footer';
 
 
 interface MainLayoutProps {
@@ -39,6 +40,42 @@ export default function HomeLayout({ children }: MainLayoutProps) {
                 {children}
                 <Spacer top={50} />
             </div>
+            <Footer
+                columnOptions={[
+                    {
+                        label: 'Sections',
+                        rowOptions: [
+                            { label: 'Home', href: '/' },
+                            { label: 'About', href: '/#about' },
+                            { label: 'Experience', href: '/#experience' },
+                            { label: 'Resume', href: '/resume.pdf' },
+                        ]
+                    }
+                ]}
+                socialOptions={[
+                    {
+                        icon: faGithub,
+                        href: 'https://www.github.com/jwstanly',
+                    },
+                    {
+                        icon: faLinkedin,
+                        href: 'https://www.linkedin.com/in/jwstanly/',
+                    },
+                    {
+                        icon: faCalendar as IconDefinition,
+                        href: 'https://calendly.com/d/cmtj-rt7-339/one-off-meeting',
+                    },
+                    {
+                        icon: faInstagram,
+                        href: 'https://www.instagram.com/jwstanly/',
+                    },
+                    {
+                          icon: faStrava,
+                          href: 'https://www.strava.com/athletes/22312632',
+                    },
+                ]}
+            >
+            </Footer>
         </div>
     )
 }

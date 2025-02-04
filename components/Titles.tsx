@@ -59,7 +59,6 @@ export function H1(props: TitleProps) {
 }
 
 export function H2(props: TitleProps) {
-    console.log(style.contentText);
     return (
         <h2
             id={props.id}
