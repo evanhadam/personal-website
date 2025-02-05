@@ -43,7 +43,7 @@ export default function HomeLayout({ children }: MainLayoutProps) {
             <Footer
                 columnOptions={[
                     {
-                        label: 'Sections',
+                        label: '',
                         rowOptions: [
                             { label: 'Home', href: '/' },
                             { label: 'About', href: '/#about' },
@@ -55,11 +55,11 @@ export default function HomeLayout({ children }: MainLayoutProps) {
                 socialOptions={[
                     {
                         icon: faGithub,
-                        href: 'https://www.github.com/jwstanly',
+                        href: 'https://github.com/evanhadam',
                     },
                     {
                         icon: faLinkedin,
-                        href: 'https://www.linkedin.com/in/jwstanly/',
+                        href: 'https://www.linkedin.com/in/evan-hadam/',
                     },
                     {
                         icon: faCalendar as IconDefinition,
@@ -67,11 +67,11 @@ export default function HomeLayout({ children }: MainLayoutProps) {
                     },
                     {
                         icon: faInstagram,
-                        href: 'https://www.instagram.com/jwstanly/',
+                        href: 'https://www.instagram.com/evan_hadam/',
                     },
                     {
                           icon: faStrava,
-                          href: 'https://www.strava.com/athletes/22312632',
+                          href: 'https://www.strava.com/athletes/evanhadam',
                     },
                 ]}
             >
